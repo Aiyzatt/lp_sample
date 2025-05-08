@@ -1,0 +1,57 @@
+// 基本的なユーティリティミックスイン
+
+@mixin font-size($size) {
+  font-size: #{$size}px;
+}
+
+@mixin link-colors($normal, $hover, $active, $focus, $visited) {
+  color: $normal;
+
+  &:hover {
+    color: $hover;
+  }
+
+  &:active {
+    color: $active;
+  }
+
+  &:focus {
+    color: $focus;
+  }
+
+  &:visited {
+    color: $visited;
+  }
+}
+
+@mixin display-flex {
+  display: flex;
+}
+
+@mixin justify-content($value) {
+  justify-content: $value;
+}
+
+@mixin align-content($value) {
+  align-content: $value;
+}
+
+@mixin align-items($value) {
+  align-items: $value;
+}
+
+@mixin flex-wrap($value) {
+  flex-wrap: $value;
+}
+
+@mixin transform($value) {
+  transform: $value;
+}
+
+@mixin transition($value) {
+  transition: $value;
+}
+
+@mixin border-radius($value) {
+  border-radius: $value;
+}
